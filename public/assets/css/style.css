@@ -1,0 +1,52 @@
+body {
+    background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)),
+                url('../images/bg-film.jpg') center / cover fixed no-repeat;
+    min-height: 100vh;
+}
+
+.navbar.bg-dark { background-color: #0d6efd !important; }
+
+.hero {
+    background: #e5e7eb;
+    color: #000000;
+    padding: 5rem 0;
+}
+.hero h1,
+.hero p { color: #000000; }
+.hero-welcome { font-family: Georgia, serif; font-style: italic; font-size: 1.6rem; color: #000000; }
+.hero .accent { color: #000000; }
+.hero-identity {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: .75rem;
+    padding: 1rem 1.5rem;
+    color: #000000;
+}
+.hero-photo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0d6efd;
+}
+
+.btn-outline-primary { --bs-btn-bg: #ffffff; }
+
+.section-title { font-weight: 700; position: relative; padding-bottom: .75rem; }
+.section-title::after {
+    content: ""; position: absolute; left: 0; bottom: 0;
+    width: 56px; height: 4px; border-radius: 4px; background: #dc3545;
+}
+
+.movie-card { border: 0; overflow: hidden; transition: transform .2s, box-shadow .2s; }
+.movie-card:hover { transform: translateY(-6px); box-shadow: 0 1rem 2rem rgba(0, 0, 0, .15) !important; }
+.movie-card img { aspect-ratio: 2 / 3; object-fit: cover; }
+
+.page-header { background: transparent; padding: 2.5rem 0; }
+.page-header .text-muted { color: #212529 !important; }
+
+.footer { background: #0d6efd; color: #ffffff; }
+.footer a { color: #ffffff; text-decoration: none; }
+.footer a:hover { color: #fde68a; }
